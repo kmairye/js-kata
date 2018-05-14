@@ -1,0 +1,33 @@
+body {
+    background-color: #a55;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100%;
+}
+#cookie {
+    background-color: #b00b55;
+    height: 10vw;
+    width: 80vw;
+    transition: all 3s;
+}
+
+/* 
+#app {
+background-color: #c0ffee;
+ width: 100vw;
+height: 100vw;
+position: relative;
+ }
+#app div {
+border-radius: 50%;
+background-color: #bada55;
+ width: 100px;
+ height: 100px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ transition: all 2s;
+}
+*/
