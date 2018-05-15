@@ -1,7 +1,19 @@
-"use strict;"
+"use strict";
+
 window.addEventListener("DOMContentLoaded", rollUp);
-const cookie = document.querySelector("#container #cookie");
+
+const cookie = document.querySelector("#cookie");
+const close = Array.from(document.getElementsByClassName("close"));
 
 function rollUp(){
-    cookie.style.backgroundColor = `hsl(${Math.random()*360}180, 50%, 50%)`;
+   cookie.style.right = `0px`;    
+    close.forEach(function(button){
+        button.addEventListener(`click`, bounce)
+    })
+}
+function bounce() {
+    setTimeout(rollOut, 500);
+}
+function rollOut() {
+    cookie.style.right = `-500px`;
 }
