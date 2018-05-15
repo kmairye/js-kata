@@ -1,10 +1,13 @@
 "use strict";
 
-window.addEventListener("DOMContentLoaded", rollUp);
+window.addEventListener("DOMContentLoaded", waitforit);
 
 const cookie = document.querySelector("#cookie");
 const close = Array.from(document.getElementsByClassName("close"));
 
+function waitforit(){
+    setTimeout(rollUp, 200);
+}
 function rollUp(){
    cookie.style.right = `0px`;    
     close.forEach(function(button){

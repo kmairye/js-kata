@@ -9,7 +9,7 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     box-shadow: 2px 2px 5px #888888;
-    transition: 2s;
+    transition: all 1s;
 }
 #cookie p {
     font-family: sans-serif;
