@@ -1,0 +1,123 @@
+:root {
+    --blue: #25a9f3;
+    --white: #fff;
+    --black: #1b1e22;
+    --lightGrey: #e9eef2;
+    --darkGrey: #718089;
+}
+/********** GENERAL SETTINGS ************/
+html {
+    font-size: 1em;
+    color: var(--black);
+    font-family: sans-serif;
+    font-weight: 300;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightGrey);
+}
+header {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: var(--white);
+    box-shadow: 1px 1px 4px var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    color: var(--darkGrey);
+}
+#entry-title-con {
+    display: grid;
+    justify-content: center;
+    grid-column: 1/2;
+}
+#stage-con {
+    grid-column: 4/5;
+    display: grid;
+    justify-content: center;
+}
+#stage {
+    background-color: var(--blue);
+    border-radius: 50%;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+/********** MAIN SETTINGS ************/
+
+main {
+    width: 80vw;
+    margin: 0 auto;
+}
+#main-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+#tweet-con {
+    padding: 10px;
+    background-color: var(--white);
+    box-shadow: 1px 1px 4px var(--black);
+}
+
+#tweet-con:nth-child(3n+1) {
+    grid-column: 1/2;
+}
+#tweet-con:nth-child(3n+2) {
+    grid-column: 2/4;
+}
+#tweet-con:nth-child(3n+3) {
+    grid-column: 1/4;
+}
+#tweet-headline-con {
+    width: 100%;
+}
+
+#tweet-hashtags-con {
+    max-width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+#tweet-hashtags-con a {
+    font-style: italic;
+    margin: 3px;
+    line-height: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--blue);
+}
+#tweet-date {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+#user {
+    display: flex;
+    align-items: center;
+}
+#user img, #user-name, #screen-name, #user-followers {
+    margin-right: 15px;
+}
+#screen-name {
+    text-decoration: underline;
+}
+#user img {
+    border-radius: 50%;
+}
+
+
+
+footer {
+    height: 46px;
+}
